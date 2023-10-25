@@ -1,4 +1,6 @@
 import Banner from "../../components/banner"
+import Categories from "../../components/categories"
+import FeatureProducts from "../../components/featureProducts"
 import Header from "../../layout/Header"
 
 const Home = () => {
@@ -6,6 +8,8 @@ const Home = () => {
     <>
     <Header />
     <Banner />
+    <Categories />
+    <FeatureProducts />
     </>
   )
 }
