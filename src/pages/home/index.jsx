@@ -18,7 +18,7 @@ const Home = () => {
               <Products title="Latest Product" />
             </div>
             <div className="overflow-hidden">
-              <Products title="Top Rated Product"  />
+              <Products title="Top Rated Product" />
             </div>
             <div className="overflow-hidden">
               <Products title="Discount Product" />
