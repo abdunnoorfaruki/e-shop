@@ -2,6 +2,7 @@ import Banner from "../../components/banner";
 import Categories from "../../components/categories";
 import FeatureProducts from "../../components/featureProducts";
 import Products from "../../components/products";
+import Footer from "../../layout/Footer";
 import Header from "../../layout/Header";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <Banner />
       <Categories />
       <FeatureProducts />
+      {/* Latest products */}
       <div className="py-10">
         <div className="w-[85%] flex flex-wrap mx-auto ">
           <div className="grid w-full grid-cols-3 md-lg:grid-cols-2 md:grid-cols-1 gap-8">
@@ -26,6 +28,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Footer */}
+      <Footer />
     </>
   );
 };
