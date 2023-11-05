@@ -37,6 +37,7 @@ const InputGroup = ({
             onBlur={onBlur}
             value={value}
             min={0}
+            id={name}
           />
         {error && <p className="text-xs text-[#CA0F0F] font-semibold ">{error}</p>}
         </div>

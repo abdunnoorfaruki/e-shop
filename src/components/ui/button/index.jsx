@@ -23,7 +23,7 @@ const Button = ({
             color ? color : "text-white"
           } uppercase px-4 font-bold ${size ? size : "text-sm"} ${
             rounded ? rounded : "rounded-none"
-          } `}
+          } py-2 px-3 `}
         >
           {" "}
           {btnTxt}
@@ -35,7 +35,7 @@ const Button = ({
             color ? color : "text-white"
           } uppercase px-4 font-bold ${size ? size : "text-sm"}  ${
             rounded ? rounded : "rounded-none"
-          }`}
+          } py-2 px-3`}
           type={type ? type : "button"}
           disabled={isLoading || isDisabled}
           onClick={btnHandler}

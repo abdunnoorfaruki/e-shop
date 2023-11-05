@@ -14,8 +14,8 @@ const LtpProduct = ({ product }) => {
         />
       </div>
       <div className="px-3 flex justify-start items-start gap-1 flex-col text-slate-500 ">
-        <h2 className="text-lg">Lorem ipsum dolor sit amet.</h2>
-        <span>$2349</span>
+        <h2 className="text-sm md:text-lg ">Lorem ipsum dolor sit amet.</h2>
+        <span className="text-sm md:text-lg" >$2349</span>
       </div>
     </Link>
   );

@@ -10,7 +10,7 @@ const FeatureProductCard = ({
   ratings,
   actions,
 }) => {
-    console.log(actions)
+  console.log(actions);
   return (
     <div className="group border transition-all duration-700 hover:shadow-md hover:-mt-3 cursor-pointer rounded-sm">
       <div className="relative overflow-hidden">
@@ -27,7 +27,11 @@ const FeatureProductCard = ({
         {/* actions icons */}
         <ul className="w-full absolute flex justify-center items-center gap-2 py-2 -bottom-10 group-hover:bottom-3 transition-all duration-700 ">
           {actions?.map((action, i) => (
-            <ProductAction key={i} Icon={action.icon} to={action.to && action.to} />
+            <ProductAction
+              key={i}
+              Icon={action.icon}
+              to={action.to && action.to}
+            />
           ))}
         </ul>
       </div>
@@ -35,9 +39,8 @@ const FeatureProductCard = ({
         <h2>{name}.</h2>
         <div className="flex justify-start items-center gap-3">
           <span className="text-lg font-bold">{price}</span>
-          <div className="flex">
-            <Ratings ratings={ratings} />
-          </div>
+
+          <Ratings ratings={ratings} />
         </div>
       </div>
     </div>

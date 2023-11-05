@@ -3,9 +3,9 @@
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
 
-const Ratings = ({ ratings }) => {
+const Ratings = ({ ratings, onClick }) => {
   return (
-    <>
+    <li className="flex gap-1 cursor-pointer"  onClick={onClick} >
       {ratings >= 1 ? (
         <span className="text-[#EDBB0E]">
           <FaStar />
@@ -71,7 +71,7 @@ const Ratings = ({ ratings }) => {
           <CiStar />
         </span>
       )}
-    </>
+    </li>
   );
 };
 
