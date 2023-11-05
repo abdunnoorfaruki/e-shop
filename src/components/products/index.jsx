@@ -24,7 +24,7 @@ const responsive = {
     items: 1,
   },
 };
-const Products = ({title}) => {
+const Products = ({title, showDots}) => {
   const [products] = useState([
     [1, 2, 3],
     [4, 5, 6],
@@ -36,11 +36,10 @@ const Products = ({title}) => {
       <Carousel
         autoPlay={true}
         arrows={false}
-        showDots={false}
+        showDots={showDots ? showDots:false}
         responsive={responsive}
         infinite={true}
         renderButtonGroupOutside={true}
-        dotListClass="md-lg:invisible"
         customButtonGroup={<ArrowButtonGroup title={title} />}
       >
         {products.map((productArr, i) => {

@@ -4,7 +4,7 @@ const ProductAction = ({ Icon, to }) => {
   return (
     <>
       {!to && (
-        <li className="w-[35px] h-[35px] rounded-full flex justify-center items-center bg-white hover:bg-[#7fad39] hover:text-white hover:rotate-[720deg] transition-all duration-300 ">
+        <li className="w-[35px] h-[35px] rounded-full flex justify-center items-center bg-white hover:bg-[#7fad39] hover:text-white hover:rotate-[720deg] transition-all duration-300 cursor-pointer ">
           <Icon size={20} />
         </li>
       )}
