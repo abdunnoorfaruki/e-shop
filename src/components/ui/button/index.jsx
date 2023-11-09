@@ -13,6 +13,9 @@ const Button = ({
   size,
   color,
   rounded,
+  py,
+  px,
+  shadow
 }) => {
   return (
     <>
@@ -21,9 +24,9 @@ const Button = ({
           to={to}
           className={`h-full w-full ${bg ? bg : "bg-indigo-500"} ${
             color ? color : "text-white"
-          } uppercase px-4 font-bold ${size ? size : "text-sm"} ${
-            rounded ? rounded : "rounded-none"
-          } py-2 px-3 `}
+          } uppercase ${px ? px : "px-3"} font-bold ${
+            size ? size : "text-sm"
+          } ${rounded ? rounded : "rounded-none"} ${py ? py : "py-2"} ${shadow} `}
         >
           {" "}
           {btnTxt}
@@ -33,9 +36,9 @@ const Button = ({
         <button
           className={`h-full w-full ${bg ? bg : "bg-indigo-500"} ${
             color ? color : "text-white"
-          } uppercase px-4 font-bold ${size ? size : "text-sm"}  ${
+          } uppercase  font-bold ${size ? size : "text-sm"}  ${
             rounded ? rounded : "rounded-none"
-          } py-2 px-3`}
+          } ${px ? px : "px-3"} ${py ? py : "py-2"}`}
           type={type ? type : "button"}
           disabled={isLoading || isDisabled}
           onClick={btnHandler}

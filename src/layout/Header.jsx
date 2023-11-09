@@ -185,9 +185,9 @@ const Header = () => {
                         </div>
                         {/* cart icon */}
                         <div className="flex justify-center items-center cursor-pointer relative w-[35px] h-[35px] rounded-full bg-[#e2e2e2]">
-                          <span className="text-xl text-orange-500">
+                          <Link to={"/cart"}  className="text-xl text-orange-500">
                             <AiFillShopping />
-                          </span>
+                          </Link>
                           <div className="absolute bg-green-500 text-white text-[10px] w-[18px] h-[18px] flex justify-center items-center rounded-full -top-[3px] -right-[5px] ">
                             5
                           </div>
