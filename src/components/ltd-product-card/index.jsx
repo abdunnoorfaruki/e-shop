@@ -2,6 +2,10 @@
 // ltd-product-card means this product will be use in latest product, top rated products, and discount product in home page 😀😀😀
 
 import { Link } from "react-router-dom";
+const baseUrl = import.meta.env.VITE_BASE_URL
+
+console.log("base url: ", baseUrl)
+
 
 const LtpProduct = ({ product }) => {
   return (
@@ -9,7 +13,7 @@ const LtpProduct = ({ product }) => {
       <div className="w-[150px]">
         <img
           className="w-full"
-          src={`http://localhost:3000/images/products/${product}.webp`}
+          src={`${baseUrl}/images/products/${product}.webp`}
           alt=""
         />
       </div>

@@ -2,6 +2,8 @@ import { useState } from "react";
 import FeatureProductCard from "../productsCard/FeatureProductCard";
 import { AiFillHeart, AiOutlineShoppingCart } from "react-icons/ai";
 import { FaEye } from "react-icons/fa";
+
+const baseUrl = import.meta.env.VITE_BASE_URL
 const FeatureProducts = () => {
   const [products] = useState([1, 2, 3, 4, 5, 6, 7]);
   const [productActions] = useState([
@@ -24,7 +26,7 @@ const FeatureProducts = () => {
         {products.map((product) => (
           <FeatureProductCard
             key={product}
-            image={`http://localhost:3000/images/products/${product}.webp`}
+            image={`${baseUrl}/images/products/${product}.webp`}
             name={"Lorem ipsum dolor sit amet."}
             discount={5}
             price={450}

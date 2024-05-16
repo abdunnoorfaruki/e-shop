@@ -2,6 +2,8 @@ import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 import {lazy, useState } from "react";
 const Carousel = lazy(() => import("react-multi-carousel"));
+const baseUrl = import.meta.env.VITE_BASE_URL
+
 const Categories = () => {
   const [categories] = useState([
     "Clothing",
@@ -60,7 +62,7 @@ const Categories = () => {
             <div className="w-full h-full relative">
               <img
               className="w-full"
-                src={`http://localhost:3000/images/products/${i + 1}.webp`}
+                src={`${baseUrl}/images/products/${i + 1}.webp`}
                 alt={category}
               />
               <div className="absolute bottom-6 w-full mx-auto font-bold left-0 flex justify-center items-center">

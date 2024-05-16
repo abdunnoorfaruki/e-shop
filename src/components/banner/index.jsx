@@ -2,6 +2,9 @@ import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 import { Suspense, lazy, useState } from "react";
 const Carousel = lazy(() => import("react-multi-carousel"));
+
+const baseUrl = import.meta.env.VITE_BASE_URL
+
 const Banner = () => {
   const [banners] = useState([1, 2, 3, 4, 5, 6, 7]);
 
@@ -49,7 +52,7 @@ const Banner = () => {
                       className="w-full h-auto md-lg:h-[400px] block"
                     >
                       <img
-                        src={`http://localhost:3000/images/banner/${img}.jpg`}
+                        src={`${baseUrl}/images/banner/${img}.jpg`}
                         alt="banner image"
                       />
                     </Link>
